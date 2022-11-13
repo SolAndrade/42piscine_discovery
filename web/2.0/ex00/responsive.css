@@ -1,0 +1,17 @@
+table {
+    border: 3;
+    height: 200px;
+    width:100%;
+}
+
+tr {
+    text-align: center;
+}
+
+td.c1 {
+    background-color:#D3A3E5
+}
+
+td.c2 {
+    background-color: #A3D9E5;
+}

@@ -1,0 +1,47 @@
+table{
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0px 0px 15px 7px #888;
+
+}
+tr {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+td{
+    padding: 10px 0 10px 0;
+}
+td.c1{
+    padding-top: 20px;
+    font-size: 25px;
+}
+img{
+    width: 100%;
+}
+td.c3{
+    font-size: 30px;
+}
+td.c4{
+    color: #B7B6BE;
+}
+td.c5{
+    font-size: 14px;
+}
+.socialMedia{
+    display: inline-flex;
+
+}
+
+.red{
+    margin: 3px;
+    font-size: 25px;
+}
+td.c7{
+    padding-bottom: 0px;
+}
+button{
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 25px;
+}

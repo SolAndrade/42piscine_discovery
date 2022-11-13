@@ -1,0 +1,42 @@
+ul{
+    display: none;
+}
+  
+input:checked  ~ ul{
+    display:block;
+}
+
+input {
+    display: none;
+}
+
+label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #A8A3E5;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    
+}
+i{
+    margin-top: 5px;
+    color: #A8A3E5;
+    font-size: 30px;
+}
+
+
+li {
+    display: block;
+    color: #A8A3E5;
+    background: #D1E5A3;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
+

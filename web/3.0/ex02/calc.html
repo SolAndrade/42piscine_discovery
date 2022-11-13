@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>ex3.2</title>
+</head>
+<body>
+    <input type="text" id="n11" placeholder="n1">    
+    
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+
+    <input type="text" id="n22" placeholder="n2">
+
+    
+    <input type="submit" id="calcular2" value="Try me!"></input>
+
+
+    
+    <script>
+        window.setTimeout(tiempo, 30000);
+        function tiempo(){
+            alert('Please, use me...')
+        }
+        document.querySelector('#calcular2').addEventListener('click', () =>{
+        const n1 = parseInt(document.querySelector('#n11').value);
+        const n2 = parseInt(document.querySelector('#n22').value);
+        const op2 = document.querySelector('#op').value;
+        let r;
+        if (n1<0 || n2<0) {
+            alert("Error :(")
+            console.log("Error :(");
+        }else if(op2 == '+'){
+            r = n1 + n2;
+            alert(r);
+            console.log(r);
+        }else if( op2 == '-'){
+            r = n1 - n2;
+            alert(r);
+            console.log(r);
+        }else if(op2 == '*'){
+            r = n1 * n2;
+            alert(r);
+            console.log(r);
+        }else if(op2 == '/'){
+            if(n2==0){
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+            }else{
+                r = n1 / n2;
+                alert(r);
+                console.log(r);
+            }
+        }else if(op2 == '%'){
+            if(n2==0){
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+            }else{
+                r = n1 % n2;
+                alert(r);
+                console.log(r);
+            }
+        }
+        
+        });
+    </script>
+</body>
+</html>

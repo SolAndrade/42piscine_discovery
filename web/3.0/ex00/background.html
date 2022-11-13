@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="background.css">
+    <title>ex3.0</title>
+</head>
+<body>
+    <button id="boton" type="button">Click me!</button>
+    <script>
+        var boton = document.getElementById("boton");
+        boton.onclick = function(){
+            document.body.style.backgroundColor = 'green';
+            boton.style.width = "150px";
+            boton.style.height = "40px";
+            boton.style.fontSize = "15px";
+            boton.onclick = function(){
+                document.body.style.backgroundColor = 'red';
+                boton.style.width = "300px";
+                boton.style.height = "60px";
+                boton.style.fontSize = "25px";
+            }
+        }
+    </script>
+</body>
+</html>
